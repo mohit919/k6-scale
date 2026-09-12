@@ -1,0 +1,5 @@
+[
+  { "username": "load-user-001@example.invalid", "segment": "standard" },
+  { "username": "load-user-002@example.invalid", "segment": "standard" },
+  { "username": "load-user-003@example.invalid", "segment": "premium" }
+]
