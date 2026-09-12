@@ -1,0 +1,27 @@
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+
+# Real test data must never be committed
+data/
+**/data/*.json
+!examples/retail/data/users.example.json
+
+# Results
+results/
+*.json.gz
+*.html
+
+# Editors / OS
+.vscode/
+.idea/
+.vs/
+.DS_Store
+Thumbs.db
+
+# Node tooling used only for project tests
+node_modules/
