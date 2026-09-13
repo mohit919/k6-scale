@@ -20,6 +20,11 @@ jobs:
           node-version: '22'
       - run: npm test
       - run: npm run check
+      - run: npm run plan
+      - name: Validate JSON workload plan
+        run: |
+          npm run plan:json --silent > /tmp/workload-plan.json
+          node -e "JSON.parse(require('fs').readFileSync('/tmp/workload-plan.json', 'utf8'))"
 
   k6-inspect:
     runs-on: ubuntu-latest
