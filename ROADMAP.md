@@ -11,13 +11,15 @@
 - [x] Synthetic retail example
 - [x] Unit tests and CI inspection
 
-## v0.2 — observability and validation
+## v0.2 — workload planning and validation
 
-- [ ] Workload plan CLI/report before execution
-- [ ] Validate dropped-iteration risk and warn on undersized VU pools
+- [x] Workload plan CLI/report before execution
+- [x] Validate dropped-iteration risk and warn on undersized VU pools
 - [ ] Standard custom metrics for journey outcome and business success
 - [ ] Example Prometheus/Grafana dashboard
-- [ ] JSON summary export
+- [x] JSON summary export
+
+The remaining observability items move forward as candidates for a later v0.x release so v0.2 stays focused on pre-execution planning and sizing diagnostics.
 
 ## v0.3 — data and distributed execution
 
