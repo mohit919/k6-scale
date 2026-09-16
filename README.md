@@ -14,6 +14,18 @@ K6 already provides excellent executors, scenarios, checks, thresholds and metri
 
 ---
 
+## Project background
+
+K6 Scale was designed and implemented from scratch, drawing on roughly **20 years of performance-engineering experience** across workload modelling, test architecture and large performance suites.
+
+The project is intentionally small. Its design follows the **KISS principle**: keep business workload intent explicit, keep journey implementation modular, derive execution mechanics rather than hand-maintaining them, and avoid adding framework abstractions where native k6 primitives already solve the problem well.
+
+That simplicity is deliberate engineering rather than a lack of scope. A core goal is to make complex workload reasoning reviewable by both performance engineers and the wider engineering organisation without hiding the important numbers behind framework magic.
+
+K6 Scale is a clean-room, vendor-neutral implementation. Public examples and APIs are designed independently and do not contain proprietary client code, endpoints, credentials, customer data or internal repository history.
+
+---
+
 ## The problem
 
 Performance requirements usually arrive in terms such as:
